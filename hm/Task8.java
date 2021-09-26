@@ -10,12 +10,11 @@ public class Task8 {
      */
     public static void stringIndex(String ss, String sss) {
         String s = ss.toLowerCase(Locale.ROOT);
-        int a = s.indexOf(sss);
-        int b = s.indexOf(sss, a + 1);
-        int c = s.indexOf(sss, b + 1);
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
+        for (int i = 0; i < s.length() - sss.length(); i++) {
+            if (s.substring(i, i + sss.length()).equals(sss)) {
+                System.out.println(i);
+            }
+        }
     }
 
     public static void main(String[] args) {
