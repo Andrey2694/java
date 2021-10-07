@@ -1,22 +1,23 @@
 package hm;
-
+        /*Необходимо создать класс Employee с полями как у Person (из предыдущего задания) и поле зарплата.
+         *Класс должен иметь метод isSameName(Employee employee) который возвращает true,
+         *если у сотрудника у которого был вызван метод и сотрудника который был передан как параметр,
+         *одинаковое имя.
+         */
 public class Employee {
-    String name;
-    int age;
-    String sex;
+    Person person;
     int salary;
 
-    Employee() {}
+    public Employee() {
+    }
 
-    Employee(Person person,int salary) {
-        this.name = person.name;
-        this.age = person.age;
-        this.sex = person.sex;
+    public Employee(Person person, int salary) {
+        this.person = person;
         this.salary = salary;
     }
 
     public boolean isSameName(Employee employee) {
-        if (this.name.equals(employee.name)) {
+        if (person.name.equals(employee.person.name)) {
             return true;
         }
 
