@@ -1,6 +1,6 @@
-package hm.task13;
+package hm.hm13;
 
-public class Methods extends Employee {
+public class EmployeeHelper {
     //    поиск сотрудника в массиве по его имени
     public static boolean findByName(Employee[] arr, String name) {
         for (Employee s : arr) {

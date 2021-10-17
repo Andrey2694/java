@@ -1,4 +1,4 @@
-package hm.task13;
+package hm.hm13;
 
 public class Manager extends Employee {
     private int numberOfSubordinates;

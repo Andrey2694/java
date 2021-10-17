@@ -1,12 +1,11 @@
-package hm.task13;
+package hm.hm13;
 
 public class Employee {
-    private int salary;
     private int baseSalary;
     private String name;
 
     public int getSalary() {
-        return salary;
+        return baseSalary;
     }
 
     public int getBaseSalary() {
