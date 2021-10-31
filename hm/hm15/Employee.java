@@ -39,6 +39,7 @@ public class Employee {
     public void setSalaryForDay(int salaryForDay) {
         this.salaryForDay = salaryForDay;
     }
+
     public int getSalary(Month[] array) {
         int salary = 0;
         for (Month ar : array) {
